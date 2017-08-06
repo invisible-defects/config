@@ -1,5 +1,6 @@
 [global_config]
   title_inactive_bg_color = "#9f1f5a"
+  title_inactive_fg_color = "#ffffff"
   title_receive_bg_color = "#18122e"
   title_transmit_bg_color = "#f74076"
 [keybindings]
@@ -14,6 +15,7 @@
 [plugins]
 [profiles]
   [[default]]
-    background_darkness = 0.37
+    background_darkness = 0.57
     background_image = None
     background_type = transparent
+    show_titlebar = False
