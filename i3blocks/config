@@ -1,0 +1,34 @@
+command=/usr/libexec/i3blocks/$BLOCK_NAME
+separator_block_width=15
+color=#61afef
+markup=none
+
+[battery]
+label=
+markup=pango
+interval=30
+
+[key_layout]
+command=/usr/libexec/i3blocks/lang
+label=Layout
+interval=1
+
+[volume]
+label=
+interval=once
+signal=10
+
+[network]
+label=
+instance=wlp0s20f3
+interval=10
+
+[disk-home]
+label=
+command=df -h -P -l $HOME | awk '/\/.*/ { print $3; exit 0 }'
+interval=30
+
+[time]
+label=
+command=date '+%a, %d %b %H:%M'
+interval=5
